@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Lobster', cursive !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background-image 0.8s ease-in-out;
+}
+
+#container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 90vw;
+  position: relative;
+  box-shadow: 0 0 30px rgba(255, 105, 135, 0.5);
+}
+
+#logo {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: transparent;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+#clickBtn {
+  border: none;
+  background: transparent;
+  font-size: 1.6em;
+  cursor: pointer;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+#clickBtn:active {
+  color: #ff4081;
+}
+
+.message {
+  font-size: 30px;
+  margin: 30px 0 20px;
+  color: #222;
+  text-align: center;
+  white-space: pre-line;
+  line-height: 1.4;
+  transition: all 0.4s ease;
+}
+
+.char {
+  display: inline-block;
+  font-size: 2.2em;
+  color: #d6336c;
+  transition: transform 0.2s ease-in;
+  margin: 0 2px;
+}
+
+#finalPage {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+  animation: bgShift 10s infinite linear;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#finalText {
+  font-size: 80px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 15px #ff6f91, 0 0 30px #ff3e6c, 0 0 40px #ffc3a0;
+  z-index: 2;
+  animation: glow 1.5s infinite alternate, scaleUp 2.5s ease-in-out infinite alternate;
+  text-align: center;
+  padding: 20px;
+}
+
+#emojiRain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff6f91;
+  }
+  to {
+    text-shadow: 0 0 25px #ff3e6c, 0 0 35px #ffc3a0;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes bgShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
