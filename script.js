@@ -7,7 +7,7 @@ const messages = [
   "Thank you for the beautiful memories — those fun, heartwarming conversations.",
   "Thank you for three wholesome years — from our first meetup to the final goodbye.",
   "Special thanks for this rare, beautiful friendship. It means the world to me.",
-  "Thank you for introducing me to [Name of Person] —\nthe genius with a glare, a heart of gold, and a PhD in getting irritated.\nShe’s a walking exam paper with mood swings... and somehow, I’m still a fan. 😅❤️"
+  "Thank you for introducing me to [Name of Person] —\nthe genius with a glare, a heart of gold, and a PhD in getting irritated.\nHe/She’s a walking exam paper with mood swings... and somehow, I’m still a fan. 😅❤️"
 ];
 
 const logos = [
